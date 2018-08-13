@@ -8,7 +8,7 @@ console.log("[PROCESS] [ANTHONY] Anthony online!")
 });
 
 Anthony.on("message", async message => {
- if (message.content.startsWith(AnthonyCONFIG.prefix + "invite")) {
+ if (message.content.startsWith(Config.prefix + "invite")) {
   message.channel.send("https://discordapp.com/api/oauth2/authorize?client_id=465539661582958592&permissions=8&scope=bot")
  }
 });
