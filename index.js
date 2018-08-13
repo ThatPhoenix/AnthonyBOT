@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const Anthony = new Discord.Client();
+const fs = require("fs");
 const config = require("./config.json");
 
 Anthony.on('ready', () => {
