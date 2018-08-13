@@ -4,6 +4,7 @@ const AnthonyCONFIG = ("./Config.json")
 
 Anthony.on('ready', () => {
  Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !invite`,{type: 'WATCHING'});
+console.log("[PROCESS] [ANTHONY] Anthony online!")
 });
 
 Anthony.on("message", async message => {
