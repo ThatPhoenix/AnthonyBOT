@@ -22,7 +22,7 @@ Anthony.on("message", async message => {
 if(command === "invite") {
   message.channel.send("https://discordapp.com/api/oauth2/authorize?client_id=465539661582958592&permissions=8&scope=bot")
  
- if(command === "ping" {
+ if(command === "ping") {
     const PingMSG = await message.channel.send("Pinging Around The World :D");
     PingMSG.edit(`Pong! Anthony's Ping is ${m.createdTimestamp - message.createdTimestamp}ms. API's ping is ${Math.round(client.ping)}ms`);
 }
