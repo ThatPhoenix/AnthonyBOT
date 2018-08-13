@@ -10,6 +10,6 @@ Anthony.on("message", async message => {
  if (message.content.startsWith(AnthonyCONFIG.prefix + "invite")) {
   message.channel.send(AnthonyCONFIG.invite)
  }
-}
+});
 
 Anthony.login(process.env.TOKEN)
