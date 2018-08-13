@@ -29,15 +29,6 @@ if(command === "invite") {
  }
 });
 
-fs.readdir("./events/", (err, files) => {
-  if (err) return console.error(err);
-  files.forEach(file => {
-    let eventFunction = require(`./events/${file}`);
-    let eventName = file.split(".")[0];
-    // super-secret recipe to call events with all their proper arguments *after* the `client` var.
-    Anthony.on(eventName, (...args) => eventFunction.run(Anthony, ...args));
-  });
-});
 
 Anthony.on("message", message => {
   if (message.author.bot) return;
