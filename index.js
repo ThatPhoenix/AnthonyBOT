@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const Anthony = new Discord.Client();
 const fs = require("fs");
 const config = require("./config.json");
-const AnthonyError = require("../utils/errors.js")
+const AnthonyError = require("./utils/errors.js")
 
 Anthony.on('ready', () => {
  Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !invite`,{type: 'WATCHING'});
