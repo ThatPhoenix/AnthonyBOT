@@ -44,7 +44,7 @@ Anthony.on("message", message => {
   } catch (err) {
     console.error(err);
   }
-});
+};
    
    client.on('message', message => {
 	if (message.author.id === "338332694725263361") {
