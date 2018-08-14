@@ -117,8 +117,8 @@ Anthony.on("message", message => {
   	  		})
    		}
   	}
+	else AnthonyError.owneronly(message.channel);
 	}
-    else AnthonyError.owneronly(message.channel);
 })
 
 
