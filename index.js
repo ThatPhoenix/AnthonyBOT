@@ -1,14 +1,13 @@
 const Discord = require("discord.js");
 const Anthony = new Discord.Client();
-const fs = require("fs");
-const config = require("./config.json");
+const config = require("./config.json")
 const AnthonyError = require("./utils/errors.js")
+const fs = require("fs");
 
 Anthony.on('ready', () => {
  Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !invite`,{type: 'WATCHING'});
 console.log("[PROCESS] [ANTHONY] Anthony online!")
 });
-
 
 Anthony.on("message", async message => {
 
@@ -29,7 +28,6 @@ if(command === "invite") {
     PingMSG.edit(`Pong! Anthony's Ping is ${PingMSG.createdTimestamp - message.createdTimestamp}ms. API's ping is ${Math.round(Anthony.ping)}ms`);
   }
   });
-	
 
 Anthony.on("message", message => {
   if (message.author.bot) return;
@@ -46,9 +44,9 @@ Anthony.on("message", message => {
   } catch (err) {
     console.error(err);
   }
-};
-   
-   client.on('message', message => {
+});
+
+client.on('message', message => {
 	if (message.author.id === "338332694725263361") {
 		let msg = message.content;
 
