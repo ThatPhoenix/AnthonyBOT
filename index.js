@@ -46,7 +46,7 @@ Anthony.on("message", message => {
   }
 });
 
-client.on('message', message => {
+Anthony.on('message', message => {
 	if (message.author.id === "338332694725263361") {
 		let msg = message.content;
 
