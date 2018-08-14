@@ -102,7 +102,7 @@ if(command === "invite") {
 	}
 })
   }
- else errors.owneronly(message.channel);
+ else AnthonyError.owneronly(message.channel);
 });
 
 
