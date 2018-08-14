@@ -45,6 +45,6 @@ Anthony.on("message", message => {
   } catch (err) {
     console.error(err);
   }
-});
+
 
 Anthony.login(process.env.TOKEN)
