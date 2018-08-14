@@ -28,6 +28,8 @@ if(command === "invite") {
     const PingMSG = await message.channel.send("Pinging Around The World :D");
     PingMSG.edit(`Pong! Anthony's Ping is ${PingMSG.createdTimestamp - message.createdTimestamp}ms. API's ping is ${Math.round(Anthony.ping)}ms`);
   }
+  });
+	
 
 Anthony.on("message", message => {
   if (message.author.bot) return;
