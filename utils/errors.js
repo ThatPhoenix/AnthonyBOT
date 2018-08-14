@@ -50,3 +50,12 @@ module.exports.noReason = (channel) => {
 
     channel.send(embed).then(m => m.delete(5000));
 }
+
+module.exports.owneronly = (channel) => {
+    let embed = new Discord.RichEmbed()
+        .setTitle("Error")
+        .setDescription("This Command is Owner Only.")
+        .setColor(config.red);
+
+    channel.send(embed).then(m => m.delete(5000));
+}
