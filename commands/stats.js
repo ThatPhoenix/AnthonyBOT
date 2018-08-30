@@ -13,7 +13,7 @@ exports.run = function(Anthony, message, args) {
   embed.setFooter('Anthony Stats')
   embed.setTimestamp()
 
-  message.channel.sendEmbed(embed);
+  message.channel.send(embed);
 };
 
 
