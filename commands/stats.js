@@ -10,7 +10,7 @@ exports.run = function(Anthony, message, args) {
   embed.addField('Channels:', `${Anthony.channels.size}`)
   embed.addField('Commands Are in BETA/Alpha')
   embed.addField(':copyright: Phoenix Systems 2017-2020. All rights reserved.', 'This is a **Phoenix Systems Corporation Bot** And copyrighted and owned by Phoenix#8196 :copyright: **Phoenix Systems Corporation**')
-  embed.setFooter('Anthony's Stats')
+  embed.setFooter('Anthony Stats')
   embed.setTimestamp()
 
   message.channel.sendEmbed(embed);
