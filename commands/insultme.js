@@ -1,5 +1,5 @@
-const AnthonyInsult = require("../insult.json")
-
+const AnthonyInsult = require("../insults.json")
+const Discord = require("discord.js")
 exports.run async (Anthony, message) => {
 message.channel.send(":warning: | This can really Hurt User's feelings Some jokes may contain Swears So please proceed with caution and do not DM the owner saying Anthony insulted you :warning:")
 message.channel.send("Do You Still Proceed? N For No Y for Yes")
