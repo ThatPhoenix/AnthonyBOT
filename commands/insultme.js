@@ -1,7 +1,7 @@
 const AnthonyInsult = require("../insult.json")
 
 exports.run async (Anthony, message) => {
-message.channel.send(":warning: | This can really Hurt User's feelings Some jokes may contain Swears So please proceed with caution and do not DM the owner saying Anthony insulted you :warning:
+message.channel.send(":warning: | This can really Hurt User's feelings Some jokes may contain Swears So please proceed with caution and do not DM the owner saying Anthony insulted you :warning:")
 message.channel.send("Do You Still Proceed? N For No Y for Yes")
   if (message.content.startsWith("Y")) {
  message.channel.send("Going on the dark edge aye?")
