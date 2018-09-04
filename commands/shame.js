@@ -1,6 +1,6 @@
 exports.run = (Anthony, msg, [user]) => {
   return msg.channel.send(`🔔 SHAME 🔔 ${user} 🔔 SHAME 🔔`)
-  Anthony.users.get(`You have shamed me ${user}  >:(`)
+  Anthony.users.get(`${user}`).send(`You have shamed me ${user} >:(`)
 };
 
 
