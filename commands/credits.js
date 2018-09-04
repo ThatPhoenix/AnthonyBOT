@@ -1,13 +1,14 @@
 const Discord = require('discord.js');
 
-exports.run = function(Anthonu, message, args) {
+exports.run = function(Anthony, message, args) {
   var AnthonyEmbed = new Discord.RichEmbed();
-  embed.setTitle('Anthony Credits :O')
-  embed.setDescription(`**Anthony's Founder**: *Phoenix#8196* \n**Anthony's Co-Owner**: *Elcobrox#3243*)`);
-  embed.setColor('#FF000');
-  embed.setThumbnail('https://cdn.discordapp.com/attachments/279965137908137986/300962159373058048/thPPL7H8TZ.jpg')
+    AnthonyEmbed.setTitle('Anthony Credits :O')
+  AnthonyEmbed.setDescription(`**Anthony's Founder:** *Phoenix#8196* \n**Anthony's Co-Owner:** *Elcobrox#3243*)`);
+  AnthonyEmbed.setColor('#FF000');
+  AnthonyEmbed.setImage(`${Anthony.user.displayAvatarURL}`)
+  AnthonyEmbed.setThumbnail(`${Anthony.user.displayAvatarURL}`)
 
-  message.channel.sendEmbed(AnthonyEmbed);
+  message.channel.send(AnthonyEmbed);
 };
 
 exports.help = {
