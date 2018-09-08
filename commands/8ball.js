@@ -1,6 +1,5 @@
-const AnthonyAnw = require('../insults.json');
+const AnthonyAnw = require('../8ball.json');
 exports.run = function(Anthony, message, args) {
-  message.channel.sendMessage(":warning: | This can offend you and also hurt your feelings")
       message.channel.send(AnthonyAnw[Math.floor(Math.random() * 4) +1]);
   
 };
