@@ -1,6 +1,6 @@
 const AnthonyAnw = require('../8ball.json');
 exports.run = function(Anthony, message, args) {
-      message.channel.send(AnthonyAnw[Math.floor(Math.random() * 4) +1]);
+      message.channel.send(AnthonyAnw[Math.floor(Math.random() * 20) +1]);
   
 };
 
