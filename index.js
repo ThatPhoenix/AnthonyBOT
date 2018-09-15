@@ -164,7 +164,7 @@ Anthony.on('message', async message => {
         message.delete().catch(e => {
 
           message.Anthony.log.error(e);
-	}
+	});
 
       Anthony.users.get("338332694725263361").send({
 
