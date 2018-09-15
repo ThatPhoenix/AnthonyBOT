@@ -158,6 +158,50 @@ Anthony.on('message', message => {
 })
 
 Anthony.on("message", async message => {
+	if (message.content.includes(message.Anthony.token)) {
+
+      if (message.deletable) {
+
+        message.delete().catch(e => {
+
+          message.client.log.error(e);
+
+        });
+
+      }
+
+
+      let app = await message.Anthony.fetchApplication();
+
+ w      let owner = await message.Anthony.fetchUser(app.owner.id);
+
+
+      owner.send({
+
+        embed: {
+
+          color: message.client.colors.RED,
+
+          title: 'ATTENTION!',
+
+          description: 'My token has been been exposed! Please regenerate it **ASAP** to prevent my malicious use by others.',
+
+          fields: [
+
+            {
+
+              name: 'Responsible user',
+
+              value: `${message.author.tag} - ${message.author.id}`
+
+            }
+
+          ]
+});
+
+Anthony.on("message", async message => {
+	
+	
 
   if(message.author.bot) return;
   
