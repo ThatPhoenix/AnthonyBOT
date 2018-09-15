@@ -157,24 +157,6 @@ Anthony.on('message', message => {
 	}
 })
 Anthony.on('message', async message => {
- if (message.content.includes(Anthony.token)) {
-
-      if (message.deletable) {
-
-        message.delete().catch(e => {
-
-        console.log.error(e);
-	};
-
-
-const embed = new Discord.RichEmbed()
- embed.setTitle("ATTENTION")
-embed.setDescription("My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others.")
-embed.setField(`Responsible User ${message.author.tag} ${message.author.id}`)
-Anthony.users.get("338332694725263361").send(embed)
-      }
- });
-	
 	 if (message.content.startsWith(`${Anthony.token}`)) {
 	const embed = new Discord.RichEmbed()
   embed.setTitle("EMERGENCY")
