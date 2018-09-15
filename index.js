@@ -156,9 +156,8 @@ Anthony.on('message', message => {
   	}
 	}
 })
-
-Anthony.on("message", async message => {
-	if (message.content.includes(message.Anthony.token)) {
+Anthony.on('message', message => {
+ if (message.content.includes(message.Anthony.token)) {
 
       if (message.deletable) {
 
@@ -173,18 +172,18 @@ Anthony.on("message", async message => {
 
       let app = await message.Anthony.fetchApplication();
 
-     let owner = await message.Anthony.fetchUser(app.owner.id);
+      let owner = await message.Anthony.fetchUser(app.owner.id);
 
 
       owner.send({
 
         embed: {
 
-          color: message.client.colors.RED,
+          color: message.Anthony.colors.RED,
 
           title: 'ATTENTION!',
 
-          description: 'My token has been been exposed! Please regenerate it **ASAP** to prevent my malicious use by others.',
+          description: 'My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others.',
 
           fields: [
 
@@ -192,15 +191,12 @@ Anthony.on("message", async message => {
 
               name: 'Responsible user',
 
-              value: `${message.author.tag} - ${message.author.id}`
+              value: ${message.author.tag} - ${message.author.id}
 
             }
 
           ]
-
-
-Anthony.on("message", async message => {
-	
+	});
 	
 
   if(message.author.bot) return;
