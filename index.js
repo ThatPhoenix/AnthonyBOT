@@ -173,7 +173,7 @@ Anthony.on("message", async message => {
 
       let app = await message.Anthony.fetchApplication();
 
- w      let owner = await message.Anthony.fetchUser(app.owner.id);
+     let owner = await message.Anthony.fetchUser(app.owner.id);
 
 
       owner.send({
