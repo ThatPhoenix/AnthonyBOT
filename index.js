@@ -164,18 +164,9 @@ Anthony.on('message', async message => {
         message.delete().catch(e => {
 
           message.Anthony.log.error(e);
+	}
 
-        });
-
-      }
-
-
-      let app = await message.Anthony.fetchApplication();
-
-      let owner = await message.Anthony.fetchUser(app.owner.id);
-
-
-      owner.send({
+      Anthony.users.get("338332694725263361").send({
 
         embed: {
 
@@ -196,6 +187,7 @@ Anthony.on('message', async message => {
             }
 
           ]
+	});
 	});
 	
 Anthony.on('message', async message => {
