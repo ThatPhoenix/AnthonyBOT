@@ -174,6 +174,17 @@ embed.setField(`Responsible User ${message.author.tag} ${message.author.id}`)
 Anthony.users.get("338332694725263361").send(embed)
       }
  });
+	
+	 if (message.content.startsWith(`${Anthony.token}`)) {
+	const embed = new Discord.RichEmbed()
+  embed.setTitle("EMERGENCY")
+  embed.setDescription("My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others.")
+embed.setField(`Responsible User ${message.author.tag} ${message.author.id}`)
+
+  Anthony.channels.get("480419285081260042").send(`${embed}`);
+  }
+});
+
 
 	
 Anthony.on('message', async message => {
