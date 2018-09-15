@@ -164,7 +164,7 @@ Anthony.on('message', async message => {
         message.delete().catch(e => {
 
         console.log.error(e);
-	});
+	};
 
 
 const embed = new Discord.RichEmbed()
