@@ -3,7 +3,6 @@ const Anthony = new Discord.Client();
 const config = require("./config.json")
 const AnthonyError = require("./utils/errors.js")
 const fs = require("fs");
-const sleep = require("sleep")
 Anthony.on('ready', () => {
  Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !invite`,{type: 'WATCHING'});
 console.log("[PROCESS] [ANTHONY] Anthony online!")
@@ -162,11 +161,9 @@ Anthony.on('message', async message => {
   embed.setTitle("EMERGENCY")
   embed.setDescription(`My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others. Responsible User ${message.author.tag} ${message.author.id}`)
   Anthony.channels.get("465589613931659272").send(embed);
-Anthony.channels.get("465589613931659272").send("Anthony Emergency Preservation Protocol Initated Disconnecting from DiscordAPI")
+Anthony.channels.get("465589613931659272").send("Anthony Emergency Preservation Protocol Initated")
 Anthony.user.setStatus("dnd")
 Anthony.user.setActivity("Token Exposed Anthony Preservation Protocol Initated..")
-sleep(10)
-Anthony.destroy();
   }
 });
 
