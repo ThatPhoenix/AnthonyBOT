@@ -160,9 +160,7 @@ Anthony.on('message', async message => {
 	 if (message.content.startsWith(`${Anthony.token}`)) {
 	const embed = new Discord.RichEmbed()
   embed.setTitle("EMERGENCY")
-  embed.setDescription("My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others.")
-  embed.setField(`Responsible User ${message.author.tag} ${message.author.id}`)
-
+  embed.setDescription(`My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others. Responsible User ${message.author.tag} ${message.author.id}`)
   Anthony.channels.get("480419285081260042").send(`${embed}`);
   }
 });
