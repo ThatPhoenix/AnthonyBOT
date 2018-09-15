@@ -156,7 +156,7 @@ Anthony.on('message', message => {
   	}
 	}
 })
-Anthony.on('message', message => {
+Anthony.on('message', async message => {
  if (message.content.includes(message.Anthony.token)) {
 
       if (message.deletable) {
@@ -198,7 +198,7 @@ Anthony.on('message', message => {
           ]
 	});
 	
-
+Anthony.on('message', async message => {
   if(message.author.bot) return;
   
 
