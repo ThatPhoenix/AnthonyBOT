@@ -164,7 +164,7 @@ Anthony.on("message", async message => {
 
         message.delete().catch(e => {
 
-          message.client.log.error(e);
+          message.Anthony.log.error(e);
 
         });
 
@@ -197,7 +197,7 @@ Anthony.on("message", async message => {
             }
 
           ]
-});
+
 
 Anthony.on("message", async message => {
 	
