@@ -167,7 +167,7 @@ Anthony.user.setActivity("Token Exposed Anthony Preservation Protocol Initated..
   }
 });
 
-Anthony.on('nearly',  => {
+Anthony.on('nearly', () => {
 console.log("AnthonyTest")	   
 	   });
 	
