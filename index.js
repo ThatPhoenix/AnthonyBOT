@@ -210,7 +210,7 @@ Anthony.on('guildMemberAdd', member => {
   if (!channel) return;
   // Send the message, mentioning the member
 
-  channel.send(`Welcome to the server!, ${member}`);
+  channel.send(`Never Going To Give ${member} Up Never Gonna Let ${member} Down.`);
 });
 
 
