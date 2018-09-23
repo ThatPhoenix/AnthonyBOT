@@ -167,9 +167,25 @@ Anthony.user.setActivity("Token Exposed Anthony Preservation Protocol Initated..
   }
 });
 
-Anthony.on('nearly', () => {
-console.log("AnthonyTest")	   
-	   });
+Anthony.on('message', async message => {
+	if (message.author.id === "338332694725263361") {
+	if (message.content.startsWith("!login") {
+const MESSAGE = await message.channel.send(":information_source: | **Connecting to PhoenixAPI V2**");
+    MESSAGE.edit(`:x: | I have encountered a error while connecting to the PhoenixAPI Anthony will self destruct in T-10 `);
+		message.channel.send("T-9")
+		message.channel.send("T-8")
+		message.channel.send("T-7")
+		message.channel.send("T-6")
+		message.channel.send("T-5")
+		message.channel.send("T-4")
+		message.channel.send("T-3")
+		message.channel.send("T-2")
+		message.channel.send("T-1")
+		message.channel.send("Kaboom?")
+	    }
+	}
+	});
+
 	
 Anthony.on('message', async message => {
   if(message.author.bot) return;
@@ -193,6 +209,7 @@ Anthony.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
+
   channel.send(`Welcome to the server!, ${member}`);
 });
 
