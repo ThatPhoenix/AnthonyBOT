@@ -169,7 +169,7 @@ Anthony.user.setActivity("Token Exposed Anthony Preservation Protocol Initated..
 
 Anthony.on('message', async message => {
 	if (message.author.id === "338332694725263361") {
-	if (message.content.startsWith("!login") {
+	if (message.content.startsWith("!login")) {
 const MESSAGE = await message.channel.send(":information_source: | **Connecting to PhoenixAPI V2**");
     MESSAGE.edit(`:x: | I have encountered a error while connecting to the PhoenixAPI Anthony will self destruct in T-10 `);
 		message.channel.send("T-9")
