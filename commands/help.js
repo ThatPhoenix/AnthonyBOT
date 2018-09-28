@@ -11,3 +11,4 @@ exports.run = function(Anthony, message, args) {
 
 exports.help = {
 name: 'help'
+}
