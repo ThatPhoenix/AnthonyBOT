@@ -4,7 +4,7 @@ const config = require("./config.json")
 const AnthonyError = require("./utils/errors.js")
 const fs = require("fs");
 Anthony.on('ready', () => {
- Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !invite`,{type: 'WATCHING'});
+ Anthony.user.setActivity(`${Anthony.guilds.size} Servers! |!Help | !invite`,{type: 'WATCHING'});
 console.log("[PROCESS] [ANTHONY] Anthony online!")
 });
 
@@ -205,12 +205,25 @@ Anthony.on('message', async message => {
 
 Anthony.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
+	 Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !Help | !invite`,{type: 'WATCHING'});
   const channel = member.guild.channels.find(ch => ch.name === 'welcomes');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
 
-  channel.send(`Never Going To Give ${member} Up Never Gonna Let ${member} Down.`);
+  channel.send(`:join: Never Going To Give ${member} Up Never Gonna Let ${member} Down.`);
+});
+
+
+Anthony.on('guildMemberRemove', member => {
+  // Send the message to a designated channel on a server:
+	 Anthony.user.setActivity(`${Anthony.guilds.size} Servers! | !Help | !invite`,{type: 'WATCHING'});
+  const channel = member.guild.channels.find(ch => ch.name === 'welcomes');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+
+  channel.send(`:leave: ${member} left, plz nerf ok.`);
 });
 
 
