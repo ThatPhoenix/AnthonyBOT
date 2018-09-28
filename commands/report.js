@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const botconfig = require("../botconfig.json");
+const botconfig = require("../config.json");
 const red = botconfig.red;
 const green = botconfig.green;
 const orange = botconfig.orange;
